@@ -1,0 +1,53 @@
+@media print {
+    body {
+        background: white;
+        color: black;
+        font-family: Times New Roman, Serif;
+        font-size: 1em;
+    }
+    .sidebar figcaption, h1 {
+        font-family: arial, sans-serif;
+    }
+        .site {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+    nav.navigation {
+        display: none;
+    }
+        .bodycopy {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .bodycopy figure {
+        width: 30%; float: left; margin-right: 10px;
+    }
+        .tileart {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+    .sidebar {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        border-bottom-left-radius: 0px;
+        padding-top: 20px;
+        border-bottom: 2px solid black;
+    }
+    .sidebar figure img {
+        display: none;
+    }
+    .sidebar figcaption {
+    margin: 0px 0 0 0;
+}
+    .footer {
+        text-align: left;
+        padding-bottom: 10px;
+        background-color: transparent;
+        grid-column: 1/2;
+        grid-row: 4/5;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+        border-top: 2px solid black;
+
+    }
+}
